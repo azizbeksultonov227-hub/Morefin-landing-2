@@ -6,7 +6,7 @@
   function setOpen(open) {
     nav.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    toggle.setAttribute("aria-label", open ? "Menyuni yopish" : "Menyuni ochish");
   }
 
   toggle.addEventListener("click", function () {

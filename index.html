@@ -3,74 +3,135 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#2a86ec" />
+  <meta name="theme-color" content="#ffffff" />
   <meta name="description" content="Morefin — biznes moliyasini oson boshqaring." />
   <title>Morefin</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <main class="page">
     <section class="hero" id="home">
-      <div class="hero__glare" aria-hidden="true"></div>
-
-      <!-- Floating money -->
-      <div class="money" aria-hidden="true">
-        <img class="m m--1" src="assets/banknote.svg" alt="" />
-        <img class="m m--2" src="assets/coin.svg" alt="" />
-        <img class="m m--3" src="assets/coin.svg" alt="" />
-        <img class="m m--4" src="assets/coin.svg" alt="" />
-        <img class="m m--5" src="assets/coin-stack.svg" alt="" />
-        <img class="m m--6" src="assets/coin.svg" alt="" />
-        <img class="m m--7" src="assets/banknote.svg" alt="" />
-        <span class="sparkle sparkle--1"></span>
-        <span class="sparkle sparkle--2"></span>
-        <span class="sparkle sparkle--3"></span>
-        <span class="sparkle sparkle--4"></span>
-      </div>
 
       <!-- Navigation -->
       <header class="nav">
-        <a class="nav__logo" href="#home" aria-label="Morefin home">
-          <img src="assets/logo-star.svg" alt="" />
+        <a class="brand" href="#home" aria-label="Morefin">
+          <svg class="brand__star" viewBox="0 0 100 100" aria-hidden="true"><polygon points="99,50 70.21,55.42 92.44,74.5 64.8,64.8 74.5,92.44 55.42,70.21 50,99 44.58,70.21 25.5,92.44 35.2,64.8 7.56,74.5 29.79,55.42 1,50 29.79,44.58 7.56,25.5 35.2,35.2 25.5,7.56 44.58,29.79 50,1 55.42,29.79 74.5,7.56 64.8,35.2 92.44,25.5 70.21,44.58" /></svg>
+          <span class="brand__name">Morefin</span>
         </a>
-        <div class="nav__actions">
-          <a class="btn btn--glass btn--sm" href="#start">Start Today</a>
-          <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-            <span></span><span></span>
-          </button>
-        </div>
-        <nav class="menu" id="menu" aria-label="Main">
-          <a class="menu__link is-active" href="#home">Home</a>
-          <a class="menu__link" href="#solutions">Solutions</a>
-          <a class="menu__link" href="#pricing">Pricing</a>
-          <a class="menu__link" href="#contact">Contact</a>
+        <button class="nav__toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span>
+        </button>
+        <nav class="menu" id="menu" aria-label="Asosiy">
+          <a class="menu__link is-active" href="#home">Bosh sahifa</a>
+          <a class="menu__link" href="#features">Imkoniyatlar</a>
+          <a class="menu__link" href="#pricing">Narxlar</a>
+          <a class="menu__link" href="#contact">Aloqa</a>
         </nav>
       </header>
 
-      <!-- Hero content -->
+      <!-- Headline -->
       <div class="hero__content">
         <h1 class="headline">
           <span class="headline__line">Biznes</span>
           <span class="headline__line">moliyasini</span>
-          <span class="headline__line headline__line--tagged">
-            <span class="tag" aria-hidden="true"><span class="tag__paper">Aqlli<br />moliya</span></span>
-            <span class="headline__word">oson</span>
-            <img class="star" src="assets/logo-star.svg" alt="" />
+          <span class="headline__line">
+            oson
+            <span class="pill" aria-hidden="true">
+              <span class="pill__arrow">
+                <svg viewBox="0 0 16 16"><path d="M3 8h9.5M8.5 4 12.5 8l-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </span>
+              <span class="pill__text">$€£</span>
+            </span>
           </span>
           <span class="headline__line">boshqaring</span>
         </h1>
 
-        <p class="scribble">Kirim &middot; Chiqim &middot; Foyda</p>
+        <p class="lead">
+          Kirim, chiqim va foydani bir joyda kuzating.
+          To‘lovlarni qabul qiling va pulingizni ishonch bilan o‘stiring.
+        </p>
 
-        <div class="hero__cta" id="start">
-          <a class="btn btn--dark btn--cta" href="#start">
-            7 kun bepul sinab ko‘rish
-            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+        <a class="cta" href="#start" id="start">
+          7 kun bepul sinab ko‘rish
+          <span class="cta__icon">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9.5M8.5 4 12.5 8l-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Cards: Visa, cash bundle, Uzcard -->
+      <div class="cards" aria-hidden="true">
+        <div class="card card--visa">
+          <span class="card__mark">Morefin</span>
+          <span class="card__visa">VISA</span>
+          <svg class="card__chip" viewBox="0 0 30 24">
+            <rect x="0.5" y="0.5" width="29" height="23" rx="5" fill="#d6bf74" stroke="#b39a4e" />
+            <path d="M0.5 8h9M0.5 16h9M20.5 8h9M20.5 16h9M9.5 0.5v23M20.5 0.5v23M9.5 12h11" stroke="#a88f45" stroke-width="1" fill="none" />
+          </svg>
+          <svg class="card__nfc" viewBox="0 0 24 24">
+            <path d="M8 7.5a6.5 6.5 0 0 1 0 9M11.5 5a10 10 0 0 1 0 14M15 2.5a13.5 13.5 0 0 1 0 19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+          <span class="card__num">•••• 4521</span>
+        </div>
+
+        <div class="cash">
+          <svg viewBox="0 0 150 244" preserveAspectRatio="xMidYMin meet">
+            <defs>
+              <linearGradient id="bill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#eef6e4" />
+                <stop offset="1" stop-color="#c9dfb5" />
+              </linearGradient>
+              <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#c6ee70" />
+                <stop offset="1" stop-color="#a9d54f" />
+              </linearGradient>
+            </defs>
+            <!-- edges of the bills underneath -->
+            <rect x="12" y="14" width="136" height="220" rx="8" fill="#9fbf88" />
+            <rect x="9" y="11" width="136" height="220" rx="8" fill="#b4d09d" />
+            <rect x="6" y="8" width="136" height="220" rx="8" fill="#a6c48f" />
+            <rect x="3" y="5" width="136" height="220" rx="8" fill="#bcd6a6" />
+            <!-- top bill -->
+            <rect x="0" y="2" width="136" height="220" rx="8" fill="url(#bill)" />
+            <g fill="none" stroke="#4f7340">
+              <rect x="7" y="9" width="122" height="206" rx="5" stroke-opacity=".55" stroke-width="1.4" />
+              <rect x="11" y="13" width="114" height="198" rx="3" stroke-opacity=".25" />
+              <g stroke-opacity=".18">
+                <ellipse cx="68" cy="68" rx="44" ry="18" />
+                <ellipse cx="68" cy="68" rx="44" ry="18" transform="rotate(30 68 68)" />
+                <ellipse cx="68" cy="68" rx="44" ry="18" transform="rotate(60 68 68)" />
+                <ellipse cx="68" cy="68" rx="44" ry="18" transform="rotate(90 68 68)" />
+                <ellipse cx="68" cy="68" rx="44" ry="18" transform="rotate(120 68 68)" />
+                <ellipse cx="68" cy="68" rx="44" ry="18" transform="rotate(150 68 68)" />
+              </g>
+            </g>
+            <ellipse cx="68" cy="68" rx="27" ry="31" fill="#f5faef" stroke="#4f7340" stroke-width="1.6" />
+            <text x="68" y="81" text-anchor="middle" class="cash__sign">$</text>
+            <text x="18" y="32" class="cash__value">100</text>
+            <text x="118" y="204" text-anchor="end" class="cash__value">100</text>
+            <!-- paper strap -->
+            <rect x="-2" y="132" width="154" height="46" fill="#0d2204" opacity=".12" transform="translate(0 3)" />
+            <rect x="-2" y="132" width="154" height="46" fill="url(#band)" />
+            <text x="75" y="153" text-anchor="middle" class="cash__band-label">MOREFIN · USD</text>
+            <text x="75" y="171" text-anchor="middle" class="cash__band-sum">$10 000</text>
+          </svg>
+        </div>
+
+        <div class="card card--uzcard">
+          <span class="card__mark">Morefin</span>
+          <span class="card__uzcard"><i></i>UZCARD</span>
+          <svg class="card__chip" viewBox="0 0 30 24">
+            <rect x="0.5" y="0.5" width="29" height="23" rx="5" fill="#d6bf74" stroke="#b39a4e" />
+            <path d="M0.5 8h9M0.5 16h9M20.5 8h9M20.5 16h9M9.5 0.5v23M20.5 0.5v23M9.5 12h11" stroke="#a88f45" stroke-width="1" fill="none" />
+          </svg>
+          <svg class="card__nfc" viewBox="0 0 24 24">
+            <path d="M8 7.5a6.5 6.5 0 0 1 0 9M11.5 5a10 10 0 0 1 0 14M15 2.5a13.5 13.5 0 0 1 0 19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+          <span class="card__num">•••• 8600</span>
         </div>
       </div>
     </section>
