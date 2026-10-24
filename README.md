@@ -6,7 +6,7 @@ Mobile-only landing page (first screen / hero). Plain HTML + CSS + a little JS, 
 index.html        page markup
 css/style.css     styles (phone layout, max-width 480px)
 js/main.js        mobile menu toggle
-assets/           coin, coin stack, banknote, burst badge and favicon SVGs
+assets/           logo star, coin, coin stack, banknote and favicon SVGs
 ```
 
 Open `index.html` in a browser (or any static server) and use the phone view in DevTools.
