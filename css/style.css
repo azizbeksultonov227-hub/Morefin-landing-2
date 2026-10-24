@@ -297,13 +297,14 @@ a {
 }
 
 .headline__line:nth-child(1) { animation-delay: 0.12s; }
-.headline__line:nth-child(2) { animation-delay: 0.2s; }
+.headline__line:nth-child(2) { animation-delay: 0.18s; }
+.headline__line:nth-child(3) { animation-delay: 0.24s; }
+.headline__line:nth-child(4) { animation-delay: 0.3s; }
 
-.headline__line--last {
+.headline__line--tagged {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation-delay: 0.28s;
 }
 
 .tag {
@@ -335,7 +336,7 @@ a {
   flex: none;
   width: 0.9em;
   height: 0.9em;
-  margin-left: -0.05em;
+  margin-left: 0.03em;
   filter: drop-shadow(0 6px 14px rgba(120, 40, 10, 0.25));
   animation:
     stamp 0.7s 0.7s var(--ease-back) both,
@@ -354,27 +355,13 @@ a {
   animation: rise 0.9s 0.36s var(--ease-out) both;
 }
 
-.hero__text {
-  max-width: 300px;
-  margin: 16px auto 0;
-  font-size: 14.5px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
-  animation: rise 0.9s 0.42s var(--ease-out) both;
-}
-
-.hero__text strong {
-  font-weight: 600;
-  color: var(--white);
-}
-
 .hero__cta {
   display: flex;
   justify-content: center;
   gap: 10px;
   width: 100%;
-  margin-top: 26px;
-  animation: rise 0.9s 0.5s var(--ease-out) both;
+  margin-top: 30px;
+  animation: rise 0.9s 0.44s var(--ease-out) both;
 }
 
 .hero__cta .btn {
